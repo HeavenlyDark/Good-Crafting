@@ -1,0 +1,55 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<h1>WEIGTH</h1>
+<div class="contenedor-weigth">
+  <div class="weigth">
+    <h2>Valores</h2>
+    <label for="numero1">Textura 1 :</label>
+    <input type="number" id="numero1" oninput="sumarYDividir()"><br>
+    <label for="numero2">Textura 2 :</label>
+    <input type="number" id="numero2" oninput="sumarYDividir()"><br>
+    <label for="numero3">Textura 3 :</label>
+    <input type="number" id="numero3" oninput="sumarYDividir()"><br>
+    <label for="numero4">Textura 4 :</label>
+    <input type="number" id="numero4" oninput="sumarYDividir()"><br>
+    <label for="numero5">Textura 5 :</label>
+    <input type="number" id="numero5" oninput="sumarYDividir()"><br>
+    <label for="numero6">Textura 6 :</label>
+    <input type="number" id="numero6" oninput="sumarYDividir()"><br>
+    <label for="numero7">Textura 7 :</label>
+    <input type="number" id="numero7" oninput="sumarYDividir()"><br>
+    <label for="numero8">Textura 8 :</label>
+    <input type="number" id="numero8" oninput="sumarYDividir()"><br>
+    <label for="numero9">Textura 9 :</label>
+    <input type="number" id="numero9" oninput="sumarYDividir()"><br>
+    <label for="numero10">Textura 10 :</label>
+    <input type="number" id="numero10" oninput="sumarYDividir()"><br>
+  </div>
+  <div class="weigth">
+    <h2>Weigth %</h2>
+    <label for="division1">Textura 1 :</label>
+    <input type="text" id="division1" readonly><br>
+    <label for="division2">Textura 2 :</label>
+    <input type="text" id="division2" readonly><br>
+    <label for="division3">Textura 3 :</label>
+    <input type="text" id="division3" readonly><br>
+    <label for="division4">Textura 4 :</label>
+    <input type="text" id="division4" readonly><br>
+    <label for="division5">Textura 5 :</label>
+    <input type="text" id="division5" readonly><br>
+    <label for="division6">Textura 6 :</label>
+    <input type="text" id="division6" readonly><br>
+    <label for="division7">Textura 7 :</label>
+    <input type="text" id="division7" readonly><br>
+    <label for="division8">Textura 8 :</label>
+    <input type="text" id="division8" readonly><br>
+    <label for="division9">Textura 9 :</label>
+    <input type="text" id="division9" readonly><br>
+    <label for="division10">Textura 10 :</label>
+    <input type="text" id="division10" readonly><br>
+  </div>
+</div>
+<script src="{{url_for('static', filename='js/weigth.js')}}"></script>
+{% endblock %}
+
