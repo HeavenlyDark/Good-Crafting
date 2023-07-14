@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Good Crafting</title>
+  <link rel="icon" href="static/imagenes/iconos/favicon-logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+  <div class="gran-contenedor">
+    <div class="contenedor-logo">
+      <a href="index.html">
+        <img class="logo-web" src="static/imagenes/Logo-Web.png" alt="Logo de la página">
+        <img class="logo-web logo-trans" src="static/imagenes/Logo-Web-Transparente.png" alt="Logo de la página">
+      </a>
+    </div>
+    <div class="contenedor-menu">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="portales.html">Portales</a></li>
+          <li><a href="texture-pack.html">Texture Pack</a></li>
+          <li><a href="#">Slime Chunks</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="contenedor-cuerpo">
+      <h1>Vincular Portales</h1>
+      <div class="contenedor-mundo">
+        <div class="mundo">
+      
+          <img class="img-portal" src="static/imagenes/overworld-pedazo.png" alt="Overworld">
+          <h3 class="retardo">Overworld</h3>
+          <div class="mundo-cont-inputs">
+      
+            <div class="mundo-inputs">
+              <div>
+                <label class="retraso retardo" for="grupo1Casillero1">X :</label>
+                <input class="retraso retardo" type="number" id="grupo1Casillero1" oninput="actualizarGrupo1()" />
+              </div>
+              <div>
+                <label class="retraso retardo" for="grupo1Casillero2">Y :</label>
+                <input class="retraso retardo" type="number" id="grupo1Casillero2" oninput="actualizarGrupo1()" />
+              </div>
+              <div>
+                <label class="retraso retardo" for="grupo1Casillero3">Z :</label>
+                <input class="retraso retardo" type="number" id="grupo1Casillero3" oninput="actualizarGrupo1()" />
+              </div>
+            </div>
+          </div>
+          <div class="coord-copiar">
+            <span class="retraso retardo" id="grupo1CasilleroTexto"></span>
+            <button class="retraso retardo" onclick="copiarContenido('grupo1CasilleroTexto')">Copiar</button>
+          </div>
+        </div>
+        
+        <div class="mundo">
+      
+          <img class="img-portal" src="static/imagenes/nether-pedazo.png" alt="Nether">
+          <h3 class="retardo">Nether</h3>
+          <div class="mundo-cont-inputs">
+            <div class="mundo-inputs">
+              <div>
+                <label class="retraso retardo" for="grupo2Casillero1">X :</label>
+                <input class="retraso retardo" type="number" id="grupo2Casillero1" oninput="actualizarGrupo2()" />
+              </div>
+              <div>
+                <label class="retraso retardo" for="grupo2Casillero2">Y :</label>
+                <input class="retraso retardo" type="number" id="grupo2Casillero2" oninput="actualizarGrupo2()" />
+              </div>
+              <div>
+                <label class="retraso retardo" for="grupo2Casillero3">Z :</label>
+                <input class="retraso retardo" type="number" id="grupo2Casillero3" oninput="actualizarGrupo2()" />
+              </div>
+            </div>
+          </div>
+          <div class="coord-copiar">
+            <span class="retraso retardo" id="grupo2CasilleroTexto"></span>
+            <button class="retraso retardo" onclick="copiarContenido('grupo2CasilleroTexto')">Copiar</button>
+          </div>
+        </div>
+      
+      </div>
+      
+      <script src="static/js/portales.js"></script>
+      <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elementosRetrasados = document.querySelectorAll(".retardo");
+        var retraso = 1000; // Retraso de 1 segundo (ajústalo según sea necesario)
+      
+        elementosRetrasados.forEach(function(elemento) {
+          elemento.style.visibility = "hidden";
+          setTimeout(function() {
+            elemento.style.visibility = "visible";
+          }, retraso);
+        });
+      });
+      
+      
+      </script>
+
+    </div>
+  </div>  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
