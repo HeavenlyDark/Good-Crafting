@@ -41,22 +41,22 @@
       
             <div class="mundo-inputs">
               <div>
-                <label class="retraso retardo" for="grupo1Casillero1">X :</label>
-                <input class="retraso retardo" type="number" id="grupo1Casillero1" oninput="actualizarGrupo1()" />
+                <label class="retardo" for="grupo1Casillero1">X :</label>
+                <input class="retardo" type="text" id="grupo1Casillero1" oninput="actualizarGrupo1()" />
               </div>
               <div>
-                <label class="retraso retardo" for="grupo1Casillero2">Y :</label>
-                <input class="retraso retardo" type="number" id="grupo1Casillero2" oninput="actualizarGrupo1()" />
+                <label class="retardo" for="grupo1Casillero2">Y :</label>
+                <input class="retardo" type="text" id="grupo1Casillero2" oninput="actualizarGrupo1()" />
               </div>
               <div>
-                <label class="retraso retardo" for="grupo1Casillero3">Z :</label>
-                <input class="retraso retardo" type="number" id="grupo1Casillero3" oninput="actualizarGrupo1()" />
+                <label class="retardo" for="grupo1Casillero3">Z :</label>
+                <input class="retardo" type="text" id="grupo1Casillero3" oninput="actualizarGrupo1()" />
               </div>
             </div>
           </div>
           <div class="coord-copiar">
-            <span class="retraso retardo" id="grupo1CasilleroTexto"></span>
-            <button class="retraso retardo" onclick="copiarContenido('grupo1CasilleroTexto')">Copiar</button>
+            <span class="retardo" id="grupo1CasilleroTexto"></span>
+            <button class="retardo" onclick="copiarContenido('grupo1CasilleroTexto')">Copiar</button>
           </div>
         </div>
         
@@ -67,55 +67,31 @@
           <div class="mundo-cont-inputs">
             <div class="mundo-inputs">
               <div>
-                <label class="retraso retardo" for="grupo2Casillero1">X :</label>
-                <input class="retraso retardo" type="number" id="grupo2Casillero1" oninput="actualizarGrupo2()" />
+                <label class="retardo" for="grupo2Casillero1">X :</label>
+                <input class="retardo" type="text" id="grupo2Casillero1" oninput="actualizarGrupo2()" />
               </div>
               <div>
-                <label class="retraso retardo" for="grupo2Casillero2">Y :</label>
-                <input class="retraso retardo" type="number" id="grupo2Casillero2" oninput="actualizarGrupo2()" />
+                <label class="retardo" for="grupo2Casillero2">Y :</label>
+                <input class="retardo" type="text" id="grupo2Casillero2" oninput="actualizarGrupo2()" />
               </div>
               <div>
-                <label class="retraso retardo" for="grupo2Casillero3">Z :</label>
-                <input class="retraso retardo" type="number" id="grupo2Casillero3" oninput="actualizarGrupo2()" />
+                <label class="retardo" for="grupo2Casillero3">Z :</label>
+                <input class="retardo" type="text" id="grupo2Casillero3" oninput="actualizarGrupo2()" />
               </div>
             </div>
           </div>
           <div class="coord-copiar">
-            <span class="retraso retardo" id="grupo2CasilleroTexto"></span>
-            <button class="retraso retardo" onclick="copiarContenido('grupo2CasilleroTexto')">Copiar</button>
+            <span class="retardo" id="grupo2CasilleroTexto"></span>
+            <button class="retardo" onclick="copiarContenido('grupo2CasilleroTexto')">Copiar</button>
           </div>
         </div>
       
       </div>
       
       <script src="static/js/portales.js"></script>
-      <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var elementosRetrasados = document.querySelectorAll(".retardo");
-        var retraso = 1000; // Retraso de 1 segundo (ajústalo según sea necesario)
-      
-        elementosRetrasados.forEach(function(elemento) {
-          elemento.style.visibility = "hidden";
-          setTimeout(function() {
-            elemento.style.visibility = "visible";
-          }, retraso);
-        });
-      });
-      
-      
-      </script>
+
 
     </div>
   </div>  
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
