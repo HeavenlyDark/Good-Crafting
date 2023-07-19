@@ -303,15 +303,15 @@ input[type=number]::-webkit-outer-spin-button {
   .mundo-cont-inputs{
     position: absolute;
     z-index: 2;
-    top: 25%;
+    top: 28%;
   }
 
   .img-portal{
-    width: 40%;
+    width: 48%;
   }
 
   .mundo h3{
-    font-size: 150%;
+    font-size: 180%;
     position: absolute;
     top: 30px;
   }
@@ -323,29 +323,29 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media (max-width: 1000px){
   .mundo-cont-inputs input{
-    width: 100px;
+    width: 120px;
   }
 }
+
 @media (max-width: 770px){
   .mundo-cont-inputs{
     position: absolute;
     z-index: 2;
-    top: 50px;
-
+    top: 100px;
   }
 
   .img-portal{
-    width: 40%;
+    width: 60%;
   }
 
   .mundo h3{
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     top: 10px;
   }
 
   .mundo-cont-inputs input{
-    width: 80px;
+    width: 120px;
   }
 
   .coord-copiar span{
@@ -353,6 +353,27 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
+@media (max-width: 680px){
+  .img-portal{
+    width: 80%;
+  }
+
+  .mundo-cont-inputs{
+    top: 24%;
+  }
+}
+
+@media (max-width: 405px){
+  .mundo-cont-inputs input{
+    width: 100px;
+  }
+}
+
 .retardo {
-  transition: opacity 0.5s;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.ghost {
+  opacity: 0.2;
 }
