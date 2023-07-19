@@ -41,16 +41,16 @@
       
             <div class="mundo-inputs">
               <div>
-                <label class="retardo" for="grupo1Casillero1">X :</label>
-                <input class="retardo" type="text" id="grupo1Casillero1" oninput="actualizarGrupo1()" />
+                <label class="retardo ghost" for="grupo1Casillero1">X :</label>
+                <input class="retardo ghost" type="text" id="grupo1Casillero1" oninput="actualizarGrupo1()" />
               </div>
               <div>
-                <label class="retardo" for="grupo1Casillero2">Y :</label>
-                <input class="retardo" type="text" id="grupo1Casillero2" oninput="actualizarGrupo1()" />
+                <label class="retardo ghost" for="grupo1Casillero2">Y :</label>
+                <input class="retardo ghost" type="text" id="grupo1Casillero2" oninput="actualizarGrupo1()" />
               </div>
               <div>
-                <label class="retardo" for="grupo1Casillero3">Z :</label>
-                <input class="retardo" type="text" id="grupo1Casillero3" oninput="actualizarGrupo1()" />
+                <label class="retardo ghost" for="grupo1Casillero3">Z :</label>
+                <input class="retardo ghost" type="text" id="grupo1Casillero3" oninput="actualizarGrupo1()" />
               </div>
             </div>
           </div>
@@ -67,16 +67,16 @@
           <div class="mundo-cont-inputs">
             <div class="mundo-inputs">
               <div>
-                <label class="retardo" for="grupo2Casillero1">X :</label>
-                <input class="retardo" type="text" id="grupo2Casillero1" oninput="actualizarGrupo2()" />
+                <label class="retardo ghost" for="grupo2Casillero1">X :</label>
+                <input class="retardo ghost" type="text" id="grupo2Casillero1" oninput="actualizarGrupo2()" />
               </div>
               <div>
-                <label class="retardo" for="grupo2Casillero2">Y :</label>
-                <input class="retardo" type="text" id="grupo2Casillero2" oninput="actualizarGrupo2()" />
+                <label class="retardo ghost" for="grupo2Casillero2">Y :</label>
+                <input class="retardo ghost" type="text" id="grupo2Casillero2" oninput="actualizarGrupo2()" />
               </div>
               <div>
-                <label class="retardo" for="grupo2Casillero3">Z :</label>
-                <input class="retardo" type="text" id="grupo2Casillero3" oninput="actualizarGrupo2()" />
+                <label class="retardo ghost" for="grupo2Casillero3">Z :</label>
+                <input class="retardo ghost" type="text" id="grupo2Casillero3" oninput="actualizarGrupo2()" />
               </div>
             </div>
           </div>
@@ -85,12 +85,21 @@
             <button class="retardo" onclick="copiarContenido('grupo2CasilleroTexto')">Copiar</button>
           </div>
         </div>
-      
       </div>
-      
       <script src="static/js/portales.js"></script>
+      <script>
+        function showElements() {
+          var elements = document.querySelectorAll(".retardo");
+          elements.forEach(function(element) {
+            element.style.opacity = 1;
+            element.classList.remove("ghost");
+          });
+        }
 
-
+        setTimeout(function() {
+          showElements();
+        }, 500);
+      </script>
     </div>
   </div>  
 </body>
